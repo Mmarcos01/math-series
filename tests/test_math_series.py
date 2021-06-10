@@ -85,3 +85,12 @@ def test_lucas_seven_returns_twentynine():
     expected = 29
     assert actual == expected
 
+def test_sum_series_no_optionals_returns_fibonacci():
+    actual = sum_series(1)
+    expected = fibonacci(1)
+    assert actual == expected
+
+def test_sum_series_with_optionals_two_and_one_returns_lucas():
+    actual = sum_series(1, 2, 1)
+    expected = lucas(1)
+    assert actual == expected
