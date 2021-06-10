@@ -1,4 +1,4 @@
-from math_series.series import fibonacci, lucas
+from math_series.series import fibonacci, lucas, sum_series
 
 def test_zero_returns_zero():
     actual = fibonacci(0)
@@ -55,8 +55,33 @@ def test_lucas_one_returns_one():
     expected = 1
     assert actual == expected
 
-def test_lucas_two_returns_3():
+def test_lucas_two_returns_three():
     actual = lucas(2)
     expected = 3
+    assert actual == expected
+
+def test_lucas_three_returns_four():
+    actual = lucas(3)
+    expected = 4
+    assert actual == expected
+
+def test_lucas_four_returns_seven():
+    actual = lucas(4)
+    expected = 7
+    assert actual == expected
+
+def test_lucas_five_returns_eleven():
+    actual = lucas(5)
+    expected = 11
+    assert actual == expected
+
+def test_lucas_six_returns_eighteen():
+    actual = lucas(6)
+    expected = 18
+    assert actual == expected
+
+def test_lucas_seven_returns_twentynine():
+    actual = lucas(7)
+    expected = 29
     assert actual == expected
 
