@@ -30,6 +30,9 @@ def sum_series(n, x=0, y=1):
 
      Other values for the optional parameters will produce other series. 
     """
-    if n == 1:
-      return fibonacci(1)
+    if n == 0:
+        return x
+    if n ==1:
+        return y
+    return sum_series(n-1, x, y) + sum_series(n-2, x, y)
 
